@@ -1,7 +1,20 @@
 
-# Rekon Analytics
+<div align="center">
 
-Rekon Analytics web apps.
+# 📊 Rekon Analytics – Education Planning Analysis System
+
+Bridging Education Insights and School Planning Through Intelligent Analysis.
+
+A web-based application designed to analyze the alignment of School Annual Work Plans (RKT) and School Activity and Budget Plans (RKAS) with Education Report (Rapor Pendidikan) data. Powered by structured data matching, rule-based validation, and Google Gemini AI to provide meaningful insights and actionable recommendations for better school planning.
+
+![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?logo=laravel&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-06B6D4?logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
+![Gemini](https://img.shields.io/badge/AI-Gemini-8E75B2?logo=googlegemini&logoColor=white)
+
+</div>
 
 ## Acknowledgements
 
@@ -17,6 +30,94 @@ We’re using Laravel for the backend and ReactJS for the frontend! 🚀
 • We’ve wrapped it all up with Shadcn for templates and Tailwind CSS for styling! 🌟
 • Tailwind makes styling a breeze—no separate CSS files needed! 🙌
 This combination is sure to make development smooth and fun! Let’s rock this project! 💪
+
+
+## ✨ Core Features
+
+**Rekon Analytics** provides several integrated features to support the evaluation and improvement of **school planning documents**.
+
+### 📥 Education Report Excel Import
+
+| Feature | Description |
+|---|---|
+| 📂 **Excel Workbook Upload** | Import school planning data from an Excel workbook |
+| 🔎 **Automated Data Extraction** | Extract relevant information from multiple workbook sheets |
+| 🧱 **Structured Data Mapping** | Transform spreadsheet data into structured application records |
+| 🏫 **School Information Extraction** | Identify school names and reporting years from the uploaded workbook |
+| ⚙️ **Data Processing** | Prepare educational priorities, root problems, RKT activities, and RKAS information for analysis |
+
+### 🎯 RKT Alignment Analysis
+
+| Feature | Description |
+|---|---|
+| 🧭 **Priority Identification Matching** | Compare RKT identification indicators against Education Report priorities |
+| 🌱 **Root Problem Matching** | Evaluate the relationship between planned activities and identified educational problems |
+| 🛠️ **Improvement Activity Evaluation** | Assess whether proposed improvement activities directly address identified root problems |
+| 📝 **Implementation Evaluation** | Analyze whether implementation descriptions are specific and meaningful follow-up activities |
+| 🧮 **Alignment Scoring** | Calculate an overall score from multiple assessment components |
+| 🧩 **Independent Program Identification** | Distinguish activities that are not based on Education Report priorities |
+
+### 🤖 AI-Powered Evaluation with Google Gemini
+
+| Feature | Description |
+|---|---|
+| 🧠 **AI-Based Activity Assessment** | Evaluate the quality and relevance of improvement activities |
+| 🔬 **Implementation Quality Assessment** | Check whether implementation activities are specific, operational, and derived from improvement activities |
+| 💡 **Automated Recommendations** | Generate practical suggestions for improving activities |
+| 🗺️ **Contextual Evaluation** | Consider identified root problems and reference activities during assessment |
+
+**Consistent scoring rubric** – results are classified into three levels:
+
+| Level | Score Range |
+|---|:---:|
+| 🟢 **Good** (*Baik*) | 0.80 – 1.00 |
+| 🟡 **Fair** (*Cukup*) | 0.50 – 0.79 |
+| 🔴 **Poor** (*Kurang*) | 0.00 – 0.49 |
+
+### ✍️ RKT Recommendation Generation
+
+| Feature | Description |
+|---|---|
+| 🚩 **Missing Priority Identification** | Identify educational priorities not yet addressed in the RKT |
+| 📌 **Improvement Suggestions** | Generate recommended improvement activities from Education Report data |
+| 🔧 **Implementation Recommendations** | Generate more specific implementation descriptions |
+| 👀 **Recommendation Review** | Let users review suggested improvements |
+| ✅ **Recommendation Acceptance** | Apply accepted suggestions to the matching RKT records |
+
+### 💰 RKAS and ARKAS Analysis
+
+| Feature | Description |
+|---|---|
+| 🔗 **RKT-to-RKAS Alignment** | Check whether budget activities support the matching RKT improvement activities |
+| 📚 **ARKAS Activity Validation** | Compare budget activity names against official reference datasets |
+| 🛒 **Goods and Services Validation** | Check budget descriptions against reference goods and services |
+| 📏 **Unit Validation** | Verify that selected units match reference data |
+| 🏷️ **Unit Price Validation** | Flag prices that exceed reference maximum prices |
+| ➗ **Budget Calculation Validation** | Check that total price equals quantity × unit price |
+| ⚠️ **Budget Consistency Monitoring** | Highlight potential inconsistencies through visual warnings |
+
+### 🧾 AI-Powered RKAS Recommendations
+
+| Feature | Description |
+|---|---|
+| 📋 **Automated Budget Recommendations** | Generate draft RKAS details based on RKT activities |
+| 🔍 **Activity Reference Matching** | Suggest relevant ARKAS activities using reference datasets |
+| 📦 **Goods and Services Recommendations** | Recommend relevant items, units, and reference prices |
+| 📅 **Budget Scheduling** | Suggest implementation months |
+| 💵 **Quantity and Cost Estimation** | Generate suggested quantities, unit prices, and total costs |
+| 🔒 **Reference-Based Generation** | Restrict recommendations to available reference candidates instead of inventing activity or product names |
+
+### 🗄️ Report Management
+
+| Feature | Description |
+|---|---|
+| 🕘 **Analysis History** | View previously processed school reports |
+| 📄 **Report Details** | Explore detailed RKT and RKAS analysis results |
+| 🔎 **Search and Filtering** | Find reports by school name and reporting year |
+| 🗑️ **Report Deletion** | Remove existing analysis records |
+| 🔐 **User Authentication** | Secure access through authenticated sessions |
+| 👤 **Profile Management** | Update user profile information |
+
 
 # Installation Guide
 
